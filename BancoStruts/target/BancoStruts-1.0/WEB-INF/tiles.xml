@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitios PUBLIC
+    "-//Apache Software Foundation/DTD Tiles Configuration 3.0//EN"
+    "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+    
+<tiles-definitions>
+    <definition name="layout" template="/WEB-INF/content/layout.jsp">
+        <put-attribute name="title" value="Pagina Principal"/>
+        <put-attribute name="header" value="/WEB-INF/content/header.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/content/menu.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/content/body.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/content/footer.jsp"/>
+    </definition>
+    
+    <definition name="principalTile" extends="layout">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="body" value="/WEB-INF/content/principal.jsp"/>
+    </definition>
+    
+    <definition name="simuladorTile" extends="layout">
+        <put-attribute name="title" value=""/> 
+        <put-attribute name="body" value="/WEB-INF/content/simulador.jsp"/>
+    </definition>
+    
+    <definition name="serviciosTile" extends="layout">
+        <put-attribute name="title" value=""/> 
+        <put-attribute name="body" value="/WEB-INF/content/servicios.jsp"/>
+    </definition>
+    
+    <definition name="sucursalesTile" extends="layout">
+        <put-attribute name="title" value=""/> 
+        <put-attribute name="body" value="/WEB-INF/content/sucursales.jsp"/>
+    </definition>
+    
+    <definition name="contactoTile" extends="layout">
+        <put-attribute name="title" value=""/> 
+        <put-attribute name="body" value="/WEB-INF/content/contacto.jsp"/>
+    </definition>
+    
+</tiles-definitions>
